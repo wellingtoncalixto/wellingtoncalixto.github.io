@@ -1,0 +1,153 @@
+/* Estilos Globais */
+/* Variaveis */
+:root {
+  --global-color-black: #000000;
+  --global-color-white: #ffffff;
+  --global-clor-c1: #1c1c1c;
+  --global-clor-c2: #2d2d2d;
+  --global-clor-c3: #464646;
+  --global-clor-c4: #5b5b5b;
+  --global-clor-c5: #6f6f6f;
+  --global-clor-c6: #9b9b9b;
+  --global-clor-c7: #afafaf;
+  --global-clor-c8: #c9c9c9;
+  --global-clor-c9: #dedede;
+  --global-clor-c10: #f0f0f0;
+  --global-color-b1: #caf0f8;
+  --global-color-b2: #ade8f4;
+  --global-color-b3: #90e0ef;
+  --global-color-b4: #48cae4;
+  --global-color-b5: #00b4d8;
+  --global-color-b6: #0096c7;
+  --global-color-b7: #0077b6;
+  --global-color-b8: #023e8a;
+  --global-color-b9: #03045e;
+  --global-space-04: 0.25rem;
+  --global-space-08: 0.5rem;
+  --global-space-12: 0.75rem;
+  --global-space-16: 1rem;
+  --global-space-20: 1.25rem;
+  --global-space-24: 1.5rem;
+  --global-space-32: 2rem;
+  --global-space-40: 1.5rem;
+  --global-space-48: 3rem;
+  --global-space-60: 3.75rem;
+  --global-space-72: 4.5rem;
+  --global-space-80: 5rem;
+  --global-space-100: 6.25rem;
+  --global-space-200: 12.5rem;
+  --font-family-kanit: "Kanit", Helvetica, sans-serif;
+  --font-family-jetbrains: "JetBrains Mono", sans-serif;
+  --font-size-display-1: 4rem;
+  --line-heigth-display-1: 1.06;
+  --letter-spacing-display-1: 5px;
+  --font-size-display-2: 3.25rem;
+  --line-heigth-display-2: 1.07;
+  --letter-spacing-display-2: 5px;
+  --font-size-heading-1: 2.25rem;
+  --line-heigth-heading-1: 1.1;
+  --letter-spacing-heading-1: 3px;
+  --font-size-heading-2: 1.75rem;
+  --line-heigth-heading-2: 1.14;
+  --letter-spacing-heading-2: 2px;
+  --font-size-heading-3: 1.5rem;
+  --line-heigth-heading-3: 1.16;
+  --letter-spacing-heading-3: 3px;
+  --font-size-body-1: 1rem;
+  --line-heigth-body-1: 1.5;
+  --letter-spacing-body-1: -5px;
+  --font-size-body-2: 0.75rem;
+  --line-heigth-body-2: 1.3;
+  --letter-spacing-body-2: -5px;
+  --font-size-cta-medium: 1rem;
+  --letter-spacing-cta-medium: 1.5px;
+  --font-size-cta-small: 0.75rem;
+  --letter-spacing-cta-small: 1px;
+  --font-size-label-1: 1rem;
+  --letter-spacing-label-1: 1px;
+  --font-size-label-2: 0.75rem;
+  --letter-spacing-label-2: 1px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+}
+
+/* Classes Tipograficas */
+.display-1 {
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-display-1);
+  line-height: var(--line-heigth-display-1);
+  letter-spacing: var(--letter-spacing-display-1);
+}
+
+.display-2 {
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-display-2);
+  line-height: var(--line-heigth-display-2);
+  letter-spacing: var(--letter-spacing-display-2);
+}
+
+.heading-1 {
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-heading-1);
+  line-height: var(--line-heigth-heading-1);
+  letter-spacing: var(--letter-spacing-heading-1);
+}
+
+.heading-2 {
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-heigth-heading-2);
+  letter-spacing: var(--letter-spacing-heading-2);
+}
+
+.heading-3-kanit {
+  font-family: var(--font-family-kanit);
+  font-size: var(--font-size-heading-3);
+  line-height: var(--line-heigth-heading-3);
+  letter-spacing: var(--letter-spacing-heading-3);
+}
+
+.heading-3-jetbrains {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-heading-3);
+  line-height: var(--line-heigth-heading-3);
+  letter-spacing: var(--letter-spacing-heading-3);
+}
+
+.body-1 {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-body-1);
+  line-height: var(--line-heigth-bo--font-size-body-1);
+  letter-spacing: var(--font-size-body-1);
+}
+
+.body-2 {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-body-2);
+  line-height: var(--line-heigth-bo--font-size-body-2);
+  letter-spacing: var(--font-size-body-2);
+}
+
+.cta-medium {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-cta-medium);
+  letter-spacing: var(--font-size-cta-medium);
+}
+
+.cta-small {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-cta-small);
+  letter-spacing: var(--font-size-cta-small);
+}
+
+.label-1 {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-label-1);
+  letter-spacing: var(--font-size-label-1);
+}
+
+.label-2 {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-label-2);
+  letter-spacing: var(--font-size-label-2);
+}
