@@ -1,0 +1,110 @@
+.introducao {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/photo-introducao.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.content {
+  max-width: 1300px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.apresentation {
+  max-width: 650px;
+}
+
+.apresentation h1 {
+  font-weight: var(--font-weight-normal);
+  margin-top: var(--global-space-300);
+}
+
+.apresentation h3 {
+  max-width: 650px;
+  margin-top: var(--global-space-20);
+  color: var(--global-color-c3);
+}
+
+.text-blue {
+  font-weight: var(--font-weight-bold);
+  color: var(--global-color-b7);
+}
+
+.introducao-buttons {
+  display: flex;
+  margin-top: var(--global-space-32);
+  gap: var(--global-space-20);
+}
+
+.introducao-buttons a {
+  text-decoration: none;
+  padding: var(--global-space-12) var(--global-space-24);
+  font-weight: var(--font-weight-bold);
+}
+
+.projeto-button {
+  background-color: var(--global-color-b5);
+  color: var(--global-color-black);
+  border-radius: var(--global-space-12);
+}
+
+.projeto-button:hover {
+  background-image: linear-gradient(
+    var(--global-color-b5),
+    var(--global-color-b3)
+  );
+}
+
+.contato-button {
+  background-color: var(--global-color-b8);
+  color: var(--global-color-white);
+  border-radius: var(--global-space-12);
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+
+.contato-button:hover {
+  background-image: linear-gradient(
+    var(--global-color-b8),
+    var(--global-color-b6)
+  );
+  transform: scale(1.2);
+}
+
+.social-midias {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.social-midias p {
+  margin-right: var(--global-space-12);
+}
+
+.social-midias a:first-of-type {
+  margin-right: var(--global-space-16);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+}
+
+.github-icon {
+  background-image: url("../img/github-logo.svg");
+}
+.linkedin-icon {
+  background-image: url("../img/linkedin-logo.svg");
+}
+
+.github-icon:hover {
+  background-image: url("../img/github-logo-hover.svg");
+}
+.linkedin-icon:hover {
+  background-image: url("../img/linkedin-logo-hover.svg");
+}

@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  width: 100%;
+  margin: var(--global-space-24) 0px;
+  z-index: 2;
+}
+
+.portifolio {
+  color: var(--global-color-b7);
+}
+
+.menu {
+  display: flex;
+  max-width: 1300px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-list {
+  display: flex;
+  gap: var(--global-space-20);
+}
+
+.menu-list li {
+  margin-top: var(--global-space-12);
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: var(--global-color-black);
+}

@@ -1,18 +1,17 @@
-/* Estilos Globais */
 /* Variaveis */
 :root {
   --global-color-black: #000000;
   --global-color-white: #ffffff;
-  --global-clor-c1: #1c1c1c;
-  --global-clor-c2: #2d2d2d;
-  --global-clor-c3: #464646;
-  --global-clor-c4: #5b5b5b;
-  --global-clor-c5: #6f6f6f;
-  --global-clor-c6: #9b9b9b;
-  --global-clor-c7: #afafaf;
-  --global-clor-c8: #c9c9c9;
-  --global-clor-c9: #dedede;
-  --global-clor-c10: #f0f0f0;
+  --global-color-c1: #1c1c1c;
+  --global-color-c2: #2d2d2d;
+  --global-color-c3: #464646;
+  --global-color-c4: #5b5b5b;
+  --global-color-c5: #6f6f6f;
+  --global-color-c6: #9b9b9b;
+  --global-color-c7: #afafaf;
+  --global-color-c8: #c9c9c9;
+  --global-color-c9: #dedede;
+  --global-color-c10: #f0f0f0;
   --global-color-b1: #caf0f8;
   --global-color-b2: #ade8f4;
   --global-color-b3: #90e0ef;
@@ -36,6 +35,8 @@
   --global-space-80: 5rem;
   --global-space-100: 6.25rem;
   --global-space-200: 12.5rem;
+  --global-space-300: 18.75rem;
+  --global-space-400: 20rem;
   --font-family-kanit: "Kanit", Helvetica, sans-serif;
   --font-family-jetbrains: "JetBrains Mono", sans-serif;
   --font-size-display-1: 4rem;
@@ -118,36 +119,64 @@
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-body-1);
   line-height: var(--line-heigth-bo--font-size-body-1);
-  letter-spacing: var(--font-size-body-1);
+  letter-spacing: var(--letter-spacingbody-1);
 }
 
 .body-2 {
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-body-2);
   line-height: var(--line-heigth-bo--font-size-body-2);
-  letter-spacing: var(--font-size-body-2);
+  letter-spacing: var(letter-spacing-body-2);
 }
 
 .cta-medium {
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-cta-medium);
-  letter-spacing: var(--font-size-cta-medium);
 }
 
 .cta-small {
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-cta-small);
-  letter-spacing: var(--font-size-cta-small);
 }
 
 .label-1 {
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-label-1);
-  letter-spacing: var(--font-size-label-1);
+  letter-spacing: var(--letter-spacing-label-1);
 }
 
 .label-2 {
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-label-2);
-  letter-spacing: var(--font-size-label-2);
+  letter-spacing: var(--letter-spacing-label-2);
+}
+
+/* Estilos Globais */
+body {
+  margin: 0;
+  background-color: var(--global-color-b1);
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
 }
