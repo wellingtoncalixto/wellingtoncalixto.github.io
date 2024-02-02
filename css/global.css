@@ -180,3 +180,16 @@ li {
 li {
   list-style: none;
 }
+
+/* Classes Globais */
+
+.content {
+  max-width: 1300px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.flex-collum {
+  flex-direction: column;
+}

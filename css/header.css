@@ -1,5 +1,5 @@
 header {
-  position: fixed;
+  position: absolute;
   width: 100%;
   margin: var(--global-space-24) 0px;
   z-index: 2;
@@ -29,4 +29,11 @@ header {
 .menu-list li a {
   text-decoration: none;
   color: var(--global-color-black);
+}
+
+@media (max-width: 1460px) {
+.menu {
+  padding: 0 var(--global-space-24)
+}
+
 }
