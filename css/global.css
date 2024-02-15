@@ -28,7 +28,7 @@
   --global-space-20: 1.25rem;
   --global-space-24: 1.5rem;
   --global-space-32: 2rem;
-  --global-space-40: 1.5rem;
+  --global-space-40: 2.5rem;
   --global-space-48: 3rem;
   --global-space-60: 3.75rem;
   --global-space-72: 4.5rem;
@@ -50,7 +50,7 @@
   --letter-spacing-heading-1: 3px;
   --font-size-heading-2: 1.75rem;
   --line-heigth-heading-2: 1.14;
-  --letter-spacing-heading-2: 2px;
+  --letter-spacing-heading-2: 0.125rem;
   --font-size-heading-3: 1.5rem;
   --line-heigth-heading-3: 1.16;
   --letter-spacing-heading-3: 3px;
@@ -68,6 +68,8 @@
   --letter-spacing-label-1: 1px;
   --font-size-label-2: 0.75rem;
   --letter-spacing-label-2: 1px;
+  --font-size-small-label: 0.75rem;
+  --letter-spacing-small-label: 0.25px;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
@@ -130,12 +132,12 @@
 }
 
 .cta-medium {
-  font-family: var(--font-family-jetbrains);
+  font-family: var(--font-family-kanit);
   font-size: var(--font-size-cta-medium);
 }
 
 .cta-small {
-  font-family: var(--font-family-jetbrains);
+  font-family: var(--font-family-kanit);
   font-size: var(--font-size-cta-small);
 }
 
@@ -151,9 +153,28 @@
   letter-spacing: var(--letter-spacing-label-2);
 }
 
+.small-label-captalize {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-small-label);
+  letter-spacing: var(--letter-spacing-small-label);
+  text-transform: capitalize;
+}
+
+.small-label-upercase {
+  font-family: var(--font-family-jetbrains);
+  font-size: var(--font-size-small-label);
+  letter-spacing: var(--letter-spacing-small-label);
+  text-transform: capitalize;
+}
+
 /* Estilos Globais */
+html {
+  font-size: 12px;
+}
+
 body {
-  margin: 0;
+  width: 100%;
+  margin: 0px;
   background-color: var(--global-color-b1);
   box-sizing: border-box;
   text-decoration: none;
@@ -167,14 +188,14 @@ h1,
 h2,
 h3,
 p {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul,
 li {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 li {
@@ -182,14 +203,63 @@ li {
 }
 
 /* Classes Globais */
-
-.content {
-  max-width: 1300px;
-  height: 100%;
-  margin: auto;
-  display: flex;
+.section {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
-.flex-collum {
+.content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: var(--global-space-24);
+}
+
+.display-none {
+  display: none;
+}
+
+.title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  color: var(--global-color-c2);
+  border-bottom: 0.25rem solid var(--global-color-b5);
+}
+
+.title::before {
+  content: "<";
+  color: var(--global-color-b5);
+}
+
+.title::after {
+  content: ">";
+  color: var(--global-color-b5);
+}
+@media (min-width: 461px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/* Medias Query */
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  .content {
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 1300px;
+    margin: 0px auto;
+  }
 }

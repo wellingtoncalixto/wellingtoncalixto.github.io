@@ -15,50 +15,153 @@
   <header>
     <nav class="menu">
       <h1 class="portifolio heading-1">Portifolio</h1>
+      <img id="hamburguer-menu" src="./img/menu-hamburguer-icon.svg" alt="menu hamburguer icon" onclick="showMenu()">
       <ul class="menu-list">
-        <li><a class="body-1" href="#about">Sobre Mim</a></li>
-        <li><a class="body-1" href="#projetos">Projeto</a></li>
-        <li><a class="body-1" href="#experiencias">Experiências</a></li>
-        <li><a class="body-1" href="#contato">Contato</a></li>
+        <li>
+          <img id="close-menu" src="./img/close-icon.svg" alt="menu hamburguer icon" onclick="hidenMenu()">
+        </li>
+        <li><a class="body-1" href="#about" onclick="hidenMenu()">Sobre Mim</a></li>
+        <li><a class="body-1" href="#projects" onclick="hidenMenu()">Projeto</a></li>
+        <li><a class="body-1" href="#experiencias" onclick="hidenMenu()">Experiências</a></li>
+        <li><a class="body-1" href="#contato" onclick="hidenMenu()">Contato</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section class="introducao">
-      <div class="content flex-collum">
-        <div class="apresentation">
+    <section class="introducao section">
+      <div class="content">
+        <div class="apresentation ">
           <h1 class="display-1">Olá, meu nome é <span class="text-blue">Wellington Calixto</span></h1>
           <h3 class="heading-3-jetbrains">Sou um Desenvolvedor Web Front-End</h3>
         </div>
-        <div class="introducao-buttons">
+        <div class="introducao-buttons ">
           <a class="projeto-button cta-medium" href="#projeto">Projetos</a>
           <a class="contato-button cta-medium" href="#contato">Contate-me</a>
         </div>
-        <div class="social-midias">
+        <div class="social-midias ">
           <p class="body-1">Redes Sociais:</p>
           <a class="icon github-icon" href=""></a>
           <a class="icon linkedin-icon" href=""></a>
         </div>
       </div>
     </section>
-    <section id="about" class="about">
-      <div class="content flex-collum">
+    <section id="about" class="about section">
+      <div class="content">
         <div class="title-container">
           <h1 class="heading-1 title">
             Sobre Mim
           </h1>
-          <span class="line"></span>
         </div>
         <div class="about-me-container">
           <h2 class="sub-title heading-2">Fico feliz que queira saber um pouco mais sobre mim e meu trabalho.</h2>
           <p class="body-1">Meu nome é Wellington Calixto, sou um Tecnólogo formado em Analise e Desenvolvimento de Sistema com tecnico em informatica para a Internet e que já atua no mercado de tecnologia a um pouco mais de 3 anos como desenvolvedor web voltado para front end.</p>
           <p class="body-1">Sou apaixonado pela área de tecnologia desde criança, entretanto só comecei a estudar para ingressar nesse mundo na minha adolescência e a partir desse ponto tenho tentado me especializar cada vez mais na área de web, que é onde está meu interesse.</p>
           <p class="body-1">Durante meu tempo de experiência no mercado, tenho trabalhando com HTML5, CSS3, SASS, JavaScript, Typescript e com frameworks como React e Angular. Atualmente com a intenção de melhorar meu trabalho comecei a estudar sobre UX/UI Designer para que cada vez mais possa trazer um trabalho com um layout mais moderno e com uma boa experiência para os usuários.</p>
+        </div>
+        <div class="download-cv-container">
           <a class="download-cv-button cta-medium" href="./files/wellington_calixto.pdf" download target="_blank">Download CV</a>
         </div>
       </div>
     </section>
+    <section id="projects" class="projects section">
+      <div class="content">
+        <div class="title-container">
+          <h1 class="heading-1 title">
+            Projetos
+          </h1>
+        </div>
+        <div class="cards-container">
+          <ul class="cards-list">
+            <li class="card">
+              <div class="card-content">
+                <div class="project-image-container">
+                  <img src="./img/card-image.png" alt="">
+                </div>
+                <div class="project-info-container">
+
+                  <h3 class="project-title body-1">Portifolio - Leticia Moraes Fotografia 1</h3>
+                  <p class="project-description body-2">Criação do UX e Desenvolvimento do portifolio da fotografa Leticia Moraes com o objetivo de mostrar seu trabalho.</p>
+                  <div class="tags-container">
+                    <p class="tag small-label-captalize">HTML</p>
+                    <p class="tag small-label-captalize">CSS</p>
+                    <p class="tag small-label-captalize">JavaScript</p>
+                  </div>
+                  <div class="buttons-container">
+                    <a class="link-button cta-medium" href="">Visitar o Site</a>
+                    <a class="github-button" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-content">
+                <div class="project-image-container">
+                  <img src="./img/card-image.png" alt="">
+                </div>
+                <div class="project-info-container">
+
+                  <h3 class="project-title body-1">Portifolio - Leticia Moraes Fotografia 2</h3>
+                  <p class="project-description body-2">Criação do UX e Desenvolvimento do portifolio da fotografa Leticia Moraes com o objetivo de mostrar seu trabalho.</p>
+                  <div class="tags-container">
+                    <p class="tag small-label-captalize">HTML</p>
+                    <p class="tag small-label-captalize">CSS</p>
+                    <p class="tag small-label-captalize">JavaScript</p>
+                  </div>
+                  <div class="buttons-container">
+                    <a class="link-button cta-medium" href="">Visitar o Site</a>
+                    <a class="github-button" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-content">
+                <div class="project-image-container">
+                  <img src="./img/card-image.png" alt="">
+                </div>
+                <div class="project-info-container">
+
+                  <h3 class="project-title body-1">Portifolio - Leticia Moraes Fotografia 3</h3>
+                  <p class="project-description body-2">Criação do UX e Desenvolvimento do portifolio da fotografa Leticia Moraes com o objetivo de mostrar seu trabalho.</p>
+                  <div class="tags-container">
+                    <p class="tag small-label-captalize">HTML</p>
+                    <p class="tag small-label-captalize">CSS</p>
+                    <p class="tag small-label-captalize">JavaScript</p>
+                  </div>
+                  <div class="buttons-container">
+                    <a class="link-button cta-medium" href="">Visitar o Site</a>
+                    <a class="github-button" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="card">
+              <div class="card-content">
+                <div class="project-image-container">
+                  <img src="./img/card-image.png" alt="">
+                </div>
+                <div class="project-info-container">
+                  <h3 class="project-title body-1">Portifolio - Leticia Moraes Fotografia 4</h3>
+                  <p class="project-description body-2">Criação do UX e Desenvolvimento do portifolio da fotografa Leticia Moraes com o objetivo de mostrar seu trabalho.</p>
+                  <div class="tags-container">
+                    <p class="tag small-label-captalize">HTML</p>
+                    <p class="tag small-label-captalize">CSS</p>
+                    <p class="tag small-label-captalize">JavaScript</p>
+                  </div>
+                  <div class="buttons-container">
+                    <a class="link-button cta-medium" href="">Visitar o Site</a>
+                    <a class="github-button" href=""></a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </main>
+  <script type="module" src="./scripts/resize_module.js"></script>
+  <script src="./scripts/header.js"></script>
 </body>
 
 </html>
