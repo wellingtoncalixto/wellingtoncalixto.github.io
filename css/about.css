@@ -13,7 +13,7 @@
   width: 100%;
   max-width: 650px;
   text-align: center;
-  margin-top: var(--global-space-72);
+  margin-top: var(--global-space-60);
   color: var(--global-color-c4);
   position: relative;
   border-left: 4px solid var(--global-color-b5);
@@ -60,14 +60,14 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .about {
     height: 100vh;
   }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .about {
     background-image: url("../img/about-section-photo.png");
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .about {
     background-position-x: 0px;
   }

@@ -22,8 +22,7 @@
         </li>
         <li><a class="body-1" href="#about" onclick="hidenMenu()">Sobre Mim</a></li>
         <li><a class="body-1" href="#projects" onclick="hidenMenu()">Projeto</a></li>
-        <li><a class="body-1" href="#experiencias" onclick="hidenMenu()">Experiências</a></li>
-        <li><a class="body-1" href="#contato" onclick="hidenMenu()">Contato</a></li>
+        <li><a class="body-1" href="#contact" onclick="hidenMenu()">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -40,8 +39,8 @@
         </div>
         <div class="social-midias ">
           <p class="body-1">Redes Sociais:</p>
-          <a class="icon github-icon" href=""></a>
-          <a class="icon linkedin-icon" href=""></a>
+          <a class="icon github-icon" href="https://github.com/wellingtoncalixto"></a>
+          <a class="icon linkedin-icon" href="https://www.linkedin.com/in/wellingtoncalixto/"></a>
         </div>
       </div>
     </section>
@@ -159,9 +158,49 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="contact section">
+      <div class="content">
+        <div class="title-container">
+          <h1 class="heading-1 title">
+            Contato
+          </h1>
+        </div>
+        <div class="message-container">
+          <h2 class="heading-3-kanit">
+            Se gostou do meu trabalho e quer entrar em contato para uma oportunidade
+            ou apenas para me dar um Oi, você pode me mandar uma mensagem preenchendo os campos abaixo ou entrar em contato pelas minhas redes sociais.
+          </h2>
+        </div>
+        <span class="line"></span>
+        <div class="form-container">
+          <form action="https://formsubmit.co/ajax/d4c0b71bc7fb604f0f996fed9a5185f6" method="POST" data-form>
+            <div class="input-container">
+              <label for="nome" class="label-1">Nome</label>
+              <input type="text" name="nome" id="nome" required />
+            </div>
+            <div class="input-container">
+              <label for="email" class="label-1">E-mail</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="text-area-container">
+              <label for="mensagem" class="label-1">Mensagem</label>
+              <textarea name="mensagem" id="mensagem" required></textarea>
+            </div>
+            <button class="cta-medium" type="submit" data-button>Enviar</button>
+          </form>
+          <span class="line"></span>
+          <div class="icon-container">
+            <a class="icon github-icon" href="https://github.com/wellingtoncalixto"></a>
+            <a class="icon linkedin-icon" href="https://www.linkedin.com/in/wellingtoncalixto/"></a>
+            <a class="icon whatsapp-icon" href="https://wa.me/5519984268415"></a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <script type="module" src="./scripts/resize_module.js"></script>
   <script src="./scripts/header.js"></script>
+  <script defer src="./scripts/form.js"></script>
 </body>
 
 </html>

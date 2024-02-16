@@ -1,0 +1,126 @@
+.contact {
+  background-color: var(--global-color-white);
+}
+
+.message-container {
+  text-align: center;
+  margin-top: var(--global-space-60);
+  letter-spacing: 0.75px;
+}
+
+.message-container h2 {
+  color: var(--global-color-c4);
+  border-left: 4px solid var(--global-color-b5);
+  border-right: 4px solid var(--global-color-b5);
+  font-size: 1rem;
+  padding-left: var(--global-space-08);
+  padding-right: var(--global-space-08);
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form-container form {
+  display: grid;
+  grid-template-areas:
+    "input"
+    "input"
+    "text"
+    "button";
+  gap: var(--global-space-20);
+}
+
+.input-container,
+.text-area-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container input {
+  height: 1rem;
+  padding: var(--global-space-12);
+}
+
+.text-area-container {
+  grid-area: text;
+}
+
+.text-area-container textarea {
+  min-height: 6rem;
+  resize: none;
+  padding: var(--global-space-12);
+}
+
+.form-container button {
+  grid-area: button;
+  width: 200px;
+  height: max-content;
+  margin: 0 auto;
+  border: 2px solid var(--global-color-b8);
+  background-color: var(--global-color-b8);
+  border-radius: var(--global-space-12);
+  padding: var(--global-space-12) var(--global-space-24);
+  text-decoration: none;
+  color: var(--global-color-white);
+  font-weight: 700;
+}
+
+.icon-container {
+  display: flex;
+  gap: var(--global-space-12);
+  justify-content: center;
+}
+
+.line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: var(--global-color-c9);
+  margin: var(--global-space-24) 0px;
+  border-radius: 4px;
+}
+
+label {
+  margin: 0 var(--global-space-08) var(--global-space-04) var(--global-space-08);
+  color: var(--global-color-c3);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  background-color: var(--global-color-c10);
+  border: var(--global-space-04) solid var(--global-color-white);
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border: var(--global-space-04) solid var(--global-color-b6);
+  outline: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  .message-container h2 {
+    font-size: 1.25rem;
+  }
+
+  .form-container form {
+    grid-template-areas:
+      "input input"
+      "text text"
+      "button button";
+  }
+
+  .input-container input {
+    height: 2rem;
+  }
+  
+  .text-area-container textarea {
+    min-height: 12rem;
+  }
+}

@@ -243,19 +243,15 @@ li {
   content: ">";
   color: var(--global-color-b5);
 }
-@media (min-width: 461px) {
+
+@media screen and (min-width: 461px) {
   html {
     font-size: 16px;
   }
 }
 
-/* Medias Query */
-/* Large devices (desktops, 1200px and up) */
-@media (min-width: 1200px) {
-}
-
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .content {
     padding-left: 0px;
     padding-right: 0px;
