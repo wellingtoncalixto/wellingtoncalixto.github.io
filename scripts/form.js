@@ -17,7 +17,7 @@ class FormSubmit {
     this.form.appendChild(control);
   }
 
-  async removeSuccessMessage() {
+  removeSuccessMessage() {
     const control = document.querySelector(`[data-control="success-message"]`);
     setTimeout(() => {
       control.remove();
