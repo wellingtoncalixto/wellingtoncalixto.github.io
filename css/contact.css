@@ -1,3 +1,25 @@
+label {
+  margin: 0 var(--global-space-08) var(--global-space-04) var(--global-space-08);
+  color: var(--global-color-c3);
+  font-weight: 700;
+}
+
+input,
+textarea {
+  background-color: var(--global-color-c10);
+  border: var(--global-space-04) solid var(--global-color-white);
+  border-radius: 0.625rem;
+  font-size: 1.5rem;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border: var(--global-space-04) solid var(--global-color-b6);
+  outline: 0;
+}
+
 .contact {
   background-color: var(--global-color-white);
 }
@@ -66,6 +88,10 @@
   font-weight: 700;
 }
 
+.form-container button:disabled {
+  opacity: 0.5;
+}
+
 .icon-container {
   display: flex;
   gap: var(--global-space-12);
@@ -81,28 +107,29 @@
   border-radius: 4px;
 }
 
-label {
-  margin: 0 var(--global-space-08) var(--global-space-04) var(--global-space-08);
-  color: var(--global-color-c3);
-  font-weight: 700;
+[data-control="success-message"] {
+  position: fixed;
+  bottom: 50%;
+  left: calc(100vw - 50% - (269px / 2));
+  background-color: #03aa65;
+  width: max-content;
+  padding: var(--global-space-12) var(--global-space-24);
+  color: var(--global-color-white);
+  border-radius: 10px;
+  animation: fade-in-fade-out 3s;
 }
 
-input,
-textarea {
-  background-color: var(--global-color-c10);
-  border: var(--global-space-04) solid var(--global-color-white);
-  border-radius: 0.625rem;
-  font-size: 1.5rem;
+[data-control="error-message"] {
+  position: fixed;
+  bottom: 50%;
+  left: calc(100vw - 50% - (431px / 2));
+  background-color: #af0404;
+  width: max-content;
+  padding: var(--global-space-12) var(--global-space-24);
+  color: var(--global-color-white);
+  border-radius: 10px;
+  animation: fade-in-fade-out 3s;
 }
-
-input:hover,
-input:focus,
-textarea:hover,
-textarea:focus {
-  border: var(--global-space-04) solid var(--global-color-b6);
-  outline: 0;
-}
-
 
 @media screen and (min-width: 768px) {
   .message-container h2 {
@@ -119,8 +146,21 @@ textarea:focus {
   .input-container input {
     height: 2rem;
   }
-  
+
   .text-area-container textarea {
     min-height: 12rem;
+  }
+}
+
+@keyframes fade-in-fade-out {
+  0% {
+    opacity: 0;
+  }
+  50%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

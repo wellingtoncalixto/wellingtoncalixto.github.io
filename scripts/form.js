@@ -10,11 +10,33 @@ class FormSubmit {
   }
 
   displaySuccess() {
-    this.form.innerHTML = this.settings.success;
+    const control = document.createElement("div");
+    control.dataset.control = "success-message";
+    control.classList.add("cta-medium");
+    control.innerHTML += `<h1>Mensagem enviada!</h1>`;
+    this.form.appendChild(control);
+  }
+
+  async removeSuccessMessage() {
+    const control = document.querySelector(`[data-control="success-message"]`);
+    setTimeout(() => {
+      control.remove();
+    }, 3000);
   }
 
   displayError() {
-    this.form.innerHTML = this.settings.error;
+    const control = document.createElement("div");
+    control.dataset.control = "error-message";
+    control.classList.add("cta-medium");
+    control.innerHTML += `<h1>Não foi possível enviar sua mensagem.</h1>`;
+    this.form.appendChild(control);
+  }
+
+  removeErrorMessage() {
+    const control = document.querySelector(`[data-control="error-message"]`);
+    setTimeout(() => {
+      control.remove();
+    }, 3000);
   }
 
   getFormObject() {
@@ -32,6 +54,11 @@ class FormSubmit {
     event.target.innerText = "Enviando...";
   }
 
+  resetButton(event) {
+    event.target.disabled = false;
+    event.target.innerText = "Enviar";
+  }
+
   async sendForm(event) {
     try {
       this.onSubmission(event);
@@ -44,10 +71,13 @@ class FormSubmit {
         body: JSON.stringify(this.getFormObject()),
       });
       this.displaySuccess();
+      this.removeSuccessMessage();
     } catch (error) {
       this.displayError();
+      this.removeErrorMessage();
       throw new Error(error);
     }
+    this.resetButton(event);
   }
 
   init() {
@@ -59,7 +89,5 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]",
   button: "[data-button]",
-  success: "<h1 class='success'>Mensagem enviada!</h1>",
-  error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
