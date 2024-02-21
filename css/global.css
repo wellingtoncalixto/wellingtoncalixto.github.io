@@ -164,7 +164,7 @@
   font-family: var(--font-family-jetbrains);
   font-size: var(--font-size-small-label);
   letter-spacing: var(--letter-spacing-small-label);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 /* Estilos Globais */
@@ -242,6 +242,35 @@ li {
 .title::after {
   content: ">";
   color: var(--global-color-b5);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.github-icon {
+  background-image: url("../img/github-logo.svg");
+}
+
+.linkedin-icon {
+  background-image: url("../img/linkedin-logo.svg");
+}
+
+.github-icon:hover {
+  background-image: url("../img/github-logo-hover.svg");
+}
+.linkedin-icon:hover {
+  background-image: url("../img/linkedin-logo-hover.svg");
+}
+
+.whatsapp-icon {
+  background-image: url("../img/whatsapp-logo.svg");
+}
+
+.whatsapp-icon:hover {
+  background-image: url("../img/whatsapp-logo-hover.svg");
 }
 
 @media screen and (min-width: 461px) {

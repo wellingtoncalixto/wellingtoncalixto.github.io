@@ -54,27 +54,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.icon {
-  width: 30px;
-  height: 30px;
-  background-size: cover;
-}
-
-.github-icon {
-  background-image: url("../img/github-logo.svg");
-  margin: 0 var(--global-space-16);
-}
-.linkedin-icon {
-  background-image: url("../img/linkedin-logo.svg");
-}
-
-.github-icon:hover {
-  background-image: url("../img/github-logo-hover.svg");
-}
-.linkedin-icon:hover {
-  background-image: url("../img/linkedin-logo-hover.svg");
+  gap: var(--global-space-12);
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
