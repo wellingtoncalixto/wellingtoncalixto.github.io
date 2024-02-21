@@ -1,0 +1,17 @@
+footer {
+  width: 100vw;
+  height: var(--global-space-100);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h3 {
+  font-weight: 400;
+  color: var(--global-color-black);
+}
+
+footer h3 span {
+  font-weight: 700;
+}
