@@ -1,4 +1,4 @@
-class FormSubmit {
+export default class FormSubmit {
   constructor(settings) {
     this.settings = settings;
     this.form = document.querySelector(settings.form);
@@ -8,6 +8,7 @@ class FormSubmit {
     }
     this.sendForm = this.sendForm.bind(this);
     this.validField = this.validField.bind(this);
+    
   }
 
   displaySuccess() {
@@ -204,9 +205,6 @@ class FormSubmit {
   }
 }
 
-const formSubmit = new FormSubmit({
-  form: "[data-form]",
-  button: "[data-button]",
-});
 
-formSubmit.init();
+
+
