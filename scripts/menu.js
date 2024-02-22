@@ -36,11 +36,22 @@ export default class Menu {
     });
   }
 
+  removeEventListeners() {
+    window.removeEventListener("resize", this.onResizeMenu);
+    this.menuHamburguerIcon.removeEventListener("click", this.showMenu);
+    this.closeMenuIcon.removeEventListener("click", this.hidenMenu);
+
+    this.linksInternos.forEach((link) => {
+      link.removeEventListener("click", this.hidenMenu);
+    });
+  }
+
   onResizeMenu() {
     if (window.innerWidth < 768) {
       this.addEventListeners();
     } else {
       this.hidenMenu();
+      this.removeEventListeners();
     }
   }
   init() {
