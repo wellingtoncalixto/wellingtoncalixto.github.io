@@ -218,6 +218,17 @@ li {
   list-style: none;
 }
 
+section {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+section.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 /* Classes Globais */
 .section {
   width: 100%;

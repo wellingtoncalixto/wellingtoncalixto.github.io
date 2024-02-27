@@ -1,7 +1,7 @@
 import { Resize } from "./resize.js";
 import FormSubmit from "./form.js";
 import Menu from "./menu.js";
-import SmoothScroll from "./smooth-scroll.js";
+import { SmoothScroll, AnimatedScroll } from "./scroll.js";
 
 const resize = new Resize();
 resize.init();
@@ -17,3 +17,6 @@ menu.init();
 
 const scroll = new SmoothScroll();
 scroll.init();
+
+const animatedScroll = new AnimatedScroll();
+animatedScroll.init();
