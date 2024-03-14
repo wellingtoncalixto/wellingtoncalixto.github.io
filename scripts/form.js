@@ -11,12 +11,19 @@ export default class FormSubmit {
     this.formFields = Array.from(this.form.querySelectorAll("input, textarea"));
   }
 
+  centerDisplayMessage(dataControl) {
+    const element = document.querySelector(`[data-control=${dataControl}]`);
+    element.style.left = `calc(50vw - (${element.offsetWidth}px / 2))`;
+  }
+
   displaySuccess() {
     const control = document.createElement("div");
     control.dataset.control = "success-message";
     control.classList.add("cta-medium");
     control.innerHTML += `<h1>Mensagem enviada!</h1>`;
     this.form.appendChild(control);
+
+    this.centerDisplayMessage("success-message");
   }
 
   removeSuccessMessage() {
@@ -32,13 +39,15 @@ export default class FormSubmit {
     control.classList.add("cta-medium");
     control.innerHTML += `<h1>Não foi possível enviar sua mensagem.</h1>`;
     this.form.appendChild(control);
+
+    this.centerDisplayMessage("error-message");
   }
 
   removeErrorMessage() {
     const control = document.querySelector(`[data-control="error-message"]`);
-    setTimeout(() => {
-      control.remove();
-    }, 3000);
+    // setTimeout(() => {
+    //   control.remove();
+    // }, 3000);
   }
 
   validateEmail(email) {

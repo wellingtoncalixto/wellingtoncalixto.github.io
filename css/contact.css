@@ -146,7 +146,6 @@ textarea:focus {
 [data-control="success-message"] {
   position: fixed;
   bottom: 50%;
-  left: calc(100vw - 50% - (269px / 2));
   background-color: #03aa65;
   width: max-content;
   padding: var(--global-space-12) var(--global-space-24);
@@ -158,7 +157,6 @@ textarea:focus {
 [data-control="error-message"] {
   position: fixed;
   bottom: 50%;
-  left: calc(100vw - 50% - (431px / 2));
   background-color: #af0404;
   width: max-content;
   padding: var(--global-space-12) var(--global-space-24);
