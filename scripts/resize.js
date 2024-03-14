@@ -14,12 +14,12 @@ export class Resize extends Utils {
   onResize() {
     clearTimeout(this.resizeId);
     this.resizeId = setTimeout(() => {
-      if (window.innerWidth < 992) {
+      if (window.innerWidth <= 768) {
         if (document.querySelector(".slide-container") === null) {
           this.addSlideClass();
           this.initSlide();
         }
-      } else if (window.innerWidth > 992) {
+      } else if (window.innerWidth > 768) {
         if (document.querySelector(".slide-container") !== null) {
           this.slide.end();
           this.removeSlideControl();
