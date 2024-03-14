@@ -8,6 +8,7 @@ export default class FormSubmit {
     }
     this.sendForm = this.sendForm.bind(this);
     this.validField = this.validField.bind(this);
+    this.formFields = Array.from(this.form.querySelectorAll("input, textarea"));
   }
 
   displaySuccess() {
@@ -110,8 +111,8 @@ export default class FormSubmit {
   }
 
   changeButtonState() {
-    const fields = Array.from(this.form.querySelectorAll("input, textarea"));
-    const values = fields.map((field) => {
+    console.log(this.formFields);
+    const values = this.formFields.map((field) => {
       return !this.valideteWhiteSpace(field.value) ||
         field.classList.contains("not-valid")
         ? false
@@ -158,11 +159,17 @@ export default class FormSubmit {
   onSubmission(event) {
     event.target.disabled = true;
     event.target.innerText = "Enviando...";
+    this.formFields.map((field) => {
+      field.disabled = true;
+    });
   }
 
   resetButton(event) {
     event.target.disabled = true;
     event.target.innerText = "Enviar";
+    this.formFields.map((field) => {
+      field.disabled = false;
+    });
   }
 
   resetFields() {

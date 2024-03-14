@@ -10,9 +10,20 @@ input,
 textarea {
   width: auto;
   background-color: var(--global-color-c10);
-  border: var(--global-space-04) solid var(--global-color-white);
+  border: var(--global-space-04) solid var(--global-color-c10);
   border-radius: 0.625rem;
   font-size: 1.5rem;
+}
+
+input:disabled,
+textarea:disabled {
+  opacity: 0.5;
+}
+
+input:disabled:hover,
+textarea:disabled:hover {
+  border: var(--global-space-04) solid var(--global-color-c10);
+  outline: 0;
 }
 
 input:hover,
