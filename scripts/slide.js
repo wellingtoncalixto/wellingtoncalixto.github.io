@@ -136,7 +136,7 @@ export default class Slide {
 
   onResize() {
     setTimeout(() => {
-      if (window.innerWidth < 992) {
+      if (window.innerWidth < 768) {
         this.slidesConfig();
         this.changeSlide(this.index.active);
       }

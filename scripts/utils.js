@@ -33,7 +33,7 @@ export default class Utils {
   removeStyle() {
     const cardList = document.querySelector(".cards-list");
     cardList.style.transition = null;
-    cardList.style.transform = null;
+    cardList.style.transform = `translate3d(0, 0, 0)`;
   }
 
   bindEvents() {

@@ -266,6 +266,35 @@ li {
   border-right: 4px solid var(--global-color-b5);
 }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+.github-icon {
+  background-image: url("../img/github-logo.svg");
+}
+
+.linkedin-icon {
+  background-image: url("../img/linkedin-logo.svg");
+}
+
+.github-icon:hover {
+  background-image: url("../img/github-logo-hover.svg");
+}
+.linkedin-icon:hover {
+  background-image: url("../img/linkedin-logo-hover.svg");
+}
+
+.whatsapp-icon {
+  background-image: url("../img/whatsapp-logo.svg");
+}
+
+.whatsapp-icon:hover {
+  background-image: url("../img/whatsapp-logo-hover.svg");
+}
+
 @media (min-width: 320px) {
   html {
     font-size: 12px;
