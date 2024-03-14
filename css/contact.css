@@ -21,6 +21,7 @@ textarea:focus {
 }
 
 .contact {
+  grid-area: contact;
   background-color: var(--global-color-white);
 }
 

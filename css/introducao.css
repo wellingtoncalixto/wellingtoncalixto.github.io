@@ -1,13 +1,24 @@
+.introducao {
+  grid-area: introducao;
+  display: flex;
+  align-items: center;
+  padding: var(--global-space-24);
+}
+
 .introducao .content {
+  display: flex;
   justify-content: center;
-  padding-top: 0px;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .apresentation {
   text-align: center;
 }
 
-.apresentation h1 span {
+.apresentation .text-blue {
   color: var(--global-color-b7);
 }
 
@@ -57,27 +68,27 @@
   gap: var(--global-space-12);
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
-@media screen and  (min-width: 1200px) {
+@media screen and (min-width: 769px) {
+  .apresentation .display-1 {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 992px) and (min-height: 450px) and (max-height: 1000px) {
   .introducao {
     background-image: url("../img/photo-introducao.png");
     background-repeat: no-repeat;
     background-position: right top;
+    background-size: 50vw auto;
   }
+
   .introducao .content {
     align-items: flex-start;
-    justify-content: center;
   }
 
   .apresentation {
+    margin-top: 0;
     text-align: start;
-    max-width: 650px;
-  }
-}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media screen and  (min-width: 1400px) {
-  .introducao .content {
-    padding: 0;
+    width: max-content;
   }
 }

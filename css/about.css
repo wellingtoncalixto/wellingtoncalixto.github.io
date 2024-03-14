@@ -1,41 +1,41 @@
 .about {
+  grid-area: about;
   background-color: var(--global-color-white);
+  padding: var(--global-space-24);
 }
 
-.about-me-container {
+.about .content {
   display: grid;
-  height: 100%;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, max-content);
+  grid-template-areas:
+    "title"
+    "subTitle"
+    "text"
+    "button";
 }
 
-.sub-title {
-  width: 100%;
-  max-width: 650px;
-  text-align: center;
+.about .content .title-container {
+  grid-area: title;
+}
+
+.about .content .sub-title {
+  grid-area: subTitle;
   margin-top: var(--global-space-60);
-  color: var(--global-color-c4);
-  position: relative;
-  border-left: 4px solid var(--global-color-b5);
-  border-right: 4px solid var(--global-color-b5);
+  padding: var(--global-space-04);
 }
 
-.about-me-container p {
-  max-width: 650px;
-}
-
-.about-me-container p:first-of-type {
-  margin-top: var(--global-space-32);
-  margin-bottom: var(--global-space-20);
-}
-
-.about-me-container p:last-of-type {
-  margin-top: var(--global-space-20);
+.about-text-container {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-space-24);
+  margin-top: var(--global-space-40);
 }
 
 .download-cv-container {
+  grid-area: button;
   display: flex;
-  width: 100%;
+  justify-content: center;
+  margin-top: var(--global-space-40);
 }
 
 .download-cv-button {
@@ -59,45 +59,26 @@
   );
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-  .about {
-    height: 100vh;
-  }
-}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) and (min-height: 450px) and (max-height: 1000px) {
   .about {
     background-image: url("../img/about-section-photo.png");
     background-repeat: no-repeat;
-    background-position-x: -120px;
-  }
-  .about-me-container p,
-  .sub-title,
-  .download-cv-button {
-    grid-column: 2;
+    background-position: left center;
+    background-size: 40% auto;
   }
 
-  .about-me-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  .download-cv-container {
-    display: grid;
+  .about .content {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .download-cv-button {
-    grid-column: 2;
-    margin-bottom: 0;
+    grid-template-areas:
+      "title title"
+      ". subTitle"
+      ". text"
+      ". button";
   }
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1300px) {
   .about {
-    background-position-x: 0px;
-  }
-  .about-me-container {
-    padding: 0;
+    background-size: auto 100vh;
   }
 }

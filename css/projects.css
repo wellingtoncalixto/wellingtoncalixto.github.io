@@ -1,4 +1,5 @@
 .projects {
+  grid-area: projects;
   width: 100%;
   height: 100vh;
 }
