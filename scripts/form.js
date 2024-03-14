@@ -8,7 +8,6 @@ export default class FormSubmit {
     }
     this.sendForm = this.sendForm.bind(this);
     this.validField = this.validField.bind(this);
-    
   }
 
   displaySuccess() {
@@ -113,7 +112,10 @@ export default class FormSubmit {
   changeButtonState() {
     const fields = Array.from(this.form.querySelectorAll("input, textarea"));
     const values = fields.map((field) => {
-      return !this.valideteWhiteSpace(field.value) ? false : true;
+      return !this.valideteWhiteSpace(field.value) ||
+        field.classList.contains("not-valid")
+        ? false
+        : true;
     });
     if (values.includes(false)) {
       this.formButton.disabled = true;
@@ -124,7 +126,6 @@ export default class FormSubmit {
 
   validField(event) {
     const element = event.srcElement;
-    this.changeButtonState();
 
     if (element.id === "email" && !this.validateEmail(element.value)) {
       element.classList.add("not-valid");
@@ -142,6 +143,7 @@ export default class FormSubmit {
       element.classList.remove("not-valid");
       this.deleteInvalidMessage(element);
     }
+    this.changeButtonState();
   }
 
   getFormObject() {
@@ -204,7 +206,3 @@ export default class FormSubmit {
     return this;
   }
 }
-
-
-
-
