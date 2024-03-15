@@ -261,7 +261,7 @@ li {
 .sub-title {
   text-align: center;
   margin-top: var(--global-space-60);
-  color: var(--global-color-64);
+  color: var(--global-color-c4);
   position: relative;
   border-left: 4px solid var(--global-color-b5);
   border-right: 4px solid var(--global-color-b5);
