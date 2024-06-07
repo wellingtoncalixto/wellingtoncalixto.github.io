@@ -112,6 +112,22 @@
   font-weight: 700;
 }
 
+.github-button {
+  display: inline-block;
+  background-color: var(--global-color-b8);
+  border-radius: var(--global-space-12);
+  padding: var(--global-space-08) var(--global-space-16);
+  height: auto;
+}
+
+.link-button:hover,
+.github-button:hover {
+  background-image: linear-gradient(
+    var(--global-color-b8),
+    var(--global-color-b6)
+  );
+}
+
 [data-control="slide"] {
   display: flex;
   justify-content: center;
@@ -186,5 +202,6 @@
     min-height: 100%;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
+    object-fit: inherit;
   }
 }
