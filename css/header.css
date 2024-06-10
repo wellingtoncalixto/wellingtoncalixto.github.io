@@ -8,6 +8,10 @@ header {
   z-index: 2;
 }
 
+#hamburguer-menu {
+  cursor: pointer;
+}
+
 .portifolio {
   color: var(--global-color-b7);
 }
@@ -54,7 +58,7 @@ header {
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media screen and  (min-width: 768px) {
+@media screen and (min-width: 768px) {
   #hamburguer-menu,
   #close-menu {
     display: none;
@@ -73,7 +77,7 @@ header {
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media screen and  (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .menu {
     max-width: 1300px;
     margin: 0 auto;

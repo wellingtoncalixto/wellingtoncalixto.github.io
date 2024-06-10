@@ -237,6 +237,10 @@ li {
 }
 
 /* Classes Globais */
+.display-none {
+  display: none;
+}
+
 .title-container {
   width: 100%;
   display: flex;
