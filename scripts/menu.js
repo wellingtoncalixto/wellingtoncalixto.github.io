@@ -18,12 +18,14 @@ export default class Menu {
     this.menu.classList.add("mobile-menu");
     this.closeMenuIcon.classList.remove("display-none");
     this.menuHamburguerIcon.classList.add("display-none");
+    document.querySelector("body").style.overflow = "hidden";
   }
 
   hidenMenu() {
     this.menu.classList.remove("mobile-menu");
     this.closeMenuIcon.classList.add("display-none");
     this.menuHamburguerIcon.classList.remove("display-none");
+    document.querySelector("body").style.overflow = "scroll";
   }
 
   addEventListeners() {
@@ -47,7 +49,8 @@ export default class Menu {
   }
 
   onResizeMenu() {
-    if (window.innerWidth < 768) {
+    if (window.innerWidth <= 768) {
+      this.bindEvents();
       this.addEventListeners();
     } else {
       this.hidenMenu();
