@@ -1,11 +1,11 @@
 header {
   grid-area: header;
-  position: absolute;
+  position: relative;
   width: 100%;
   margin: 1.5rem auto;
   display: flex;
   justify-content: space-between;
-  z-index: 2;
+  z-index: 1;
 }
 
 #hamburguer-menu {

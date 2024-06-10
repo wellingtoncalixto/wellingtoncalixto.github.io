@@ -181,7 +181,7 @@
 }
 
 html {
-  font-size: 16px;
+  font-size: 0.75rem;
 }
 
 html::-webkit-scrollbar {
@@ -208,28 +208,17 @@ body {
 
 main {
   display: grid;
+
   grid-template-areas:
     "header"
     "introducao"
     "about"
     "projects"
     "contact";
-  grid-template-rows: repeat(5, max-content);
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul,
-li {
-  margin: 0px;
-  padding: 0px;
+  /* overflow-x: hidden; */
+  grid-template-rows:
+    max-content minmax(calc(100vh - 30px - 1.5rem - (2 * 1rem)), max-content)
+    repeat(3, minmax(100vh, max-content));
 }
 
 li {
@@ -300,50 +289,17 @@ li {
   background-image: url("../img/whatsapp-logo-hover.svg");
 }
 
-@media (min-width: 320px) {
+@media (min-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 1rem;
   }
 }
 
-@media (min-width: 320px) and (min-height: 320px) {
-  main {
-    grid-template-rows: max-content 100vh repeat(3, max-content);
-  }
-}
-
-@media screen and (min-width: 500px) and (min-height: 320px) {
-  main {
-    grid-template-rows: max-content 100vh repeat(3, max-content);
-  }
-}
-
-@media (min-width: 700px) {
-  main {
-    grid-template-rows: max-content 100vh repeat(3, max-content);
-  }
-}
-
-@media (min-width: 992px) {
-  html {
-    font-size: 16px;
-  }
-  main {
-    grid-template-rows: max-content 100vh max-content max-content max-content;
-  }
-}
-
-@media (min-width: 1200px) and (min-height: 800px) {
-  main {
-    grid-template-rows: max-content repeat(4, 100vh);
-  }
-}
-
-@media screen and (min-width: 1400px) {
+/* @media screen and (min-width: 1400px) {
   .content {
     padding-left: 0px;
     padding-right: 0px;
     max-width: 1300px;
     margin: 0px auto;
   }
-}
+} */

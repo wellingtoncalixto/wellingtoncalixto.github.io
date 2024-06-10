@@ -63,7 +63,7 @@
   .about {
     background-image: url("../img/about-section-photo.png");
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left;
     background-size: 40% auto;
   }
 
