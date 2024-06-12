@@ -168,7 +168,6 @@
 }
 
 /* Estilos Globais */
-/* Estilos Globais */
 
 *,
 *:after,
@@ -253,11 +252,12 @@ li {
 
 .sub-title {
   text-align: center;
-  margin-top: var(--global-space-60);
+  margin-top: var(--global-space-24);
   color: var(--global-color-c4);
   position: relative;
   border-left: 4px solid var(--global-color-b5);
   border-right: 4px solid var(--global-color-b5);
+  padding: 0 var(--global-space-12);
 }
 
 .icon {
@@ -295,11 +295,11 @@ li {
   }
 }
 
-/* @media screen and (min-width: 1400px) {
+@media screen and (min-width: 1400px) {
   .content {
     padding-left: 0px;
     padding-right: 0px;
     max-width: 1300px;
     margin: 0px auto;
   }
-} */
+}
