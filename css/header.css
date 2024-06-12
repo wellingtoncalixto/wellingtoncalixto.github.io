@@ -8,6 +8,26 @@ header {
   z-index: 1;
 }
 
+header nav a {
+  text-decoration: none;
+}
+
+.active {
+  position: fixed;
+  background-color: var(--global-color-b8);
+  margin: 0 auto;
+  height: 80px;
+  z-index: 2;
+}
+
+.active nav h1 {
+  color: #fff;
+}
+
+.active nav ul li a {
+  color: #fff;
+}
+
 #hamburguer-menu {
   cursor: pointer;
 }
@@ -46,6 +66,10 @@ header {
 .mobile-menu li:first-of-type {
   align-self: flex-end;
   margin-top: var(--global-space-24);
+}
+
+.active .mobile-menu li:first-of-type {
+  margin-top: var(--global-space-60);
 }
 
 .mobile-menu li {

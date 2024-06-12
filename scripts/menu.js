@@ -2,6 +2,7 @@ import debounce from "./debounce.js";
 
 export default class Menu {
   constructor() {
+    this.header = document.querySelector("header");
     this.linksInternos = document.querySelectorAll(".menu-list a");
     this.menu = document.querySelector(".menu-list");
     this.menuHamburguerIcon = document.getElementById("hamburguer-menu");
@@ -12,6 +13,10 @@ export default class Menu {
     this.hidenMenu = this.hidenMenu.bind(this);
     this.showMenu = this.showMenu.bind(this);
     this.onResizeMenu = debounce(this.onResizeMenu.bind(this), 100);
+    this.addActiveClassOnScroll = debounce(
+      this.addActiveClassOnScroll.bind(this),
+      1
+    );
   }
 
   showMenu() {
@@ -48,6 +53,20 @@ export default class Menu {
     });
   }
 
+  addScrollEventListener() {
+    document.addEventListener("scroll", this.addActiveClassOnScroll);
+  }
+
+  addActiveClassOnScroll() {
+    let scrollPos = window.pageYOffset;
+
+    if (scrollPos > 1) {
+      this.header.classList.add("active");
+    } else {
+      this.header.classList.remove("active");
+    }
+  }
+
   onResizeMenu() {
     if (window.innerWidth <= 768) {
       this.bindEvents();
@@ -60,5 +79,6 @@ export default class Menu {
   init() {
     this.bindEvents();
     this.addEventListeners();
+    this.addScrollEventListener();
   }
 }
