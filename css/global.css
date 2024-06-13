@@ -267,26 +267,26 @@ li {
 }
 
 .github-icon {
-  background-image: url("../img/github-logo.svg");
+  background-image: url("../assets/icones/github-logo.svg");
 }
 
 .linkedin-icon {
-  background-image: url("../img/linkedin-logo.svg");
+  background-image: url("../assets/icones/linkedin-logo.svg");
 }
 
 .github-icon:hover {
-  background-image: url("../img/github-logo-hover.svg");
+  background-image: url("../assets/icones/github-logo-hover.svg");
 }
 .linkedin-icon:hover {
-  background-image: url("../img/linkedin-logo-hover.svg");
+  background-image: url("../assets/icones/linkedin-logo-hover.svg");
 }
 
 .whatsapp-icon {
-  background-image: url("../img/whatsapp-logo.svg");
+  background-image: url("../assets/icones/whatsapp-logo.svg");
 }
 
 .whatsapp-icon:hover {
-  background-image: url("../img/whatsapp-logo-hover.svg");
+  background-image: url("../assets/icones/whatsapp-logo-hover.svg");
 }
 
 @media (min-width: 768px) {

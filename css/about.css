@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 992px) and (min-height: 450px) {
   .about {
-    background-image: url("../img/about-section-photo.png");
+    background-image: url("../assets/images/about-section-photo.png");
     background-repeat: no-repeat;
     background-position: left;
     background-size: 40% auto;
