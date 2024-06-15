@@ -12,7 +12,7 @@ header nav a {
   text-decoration: none;
 }
 
-.active {
+.fixed {
   position: fixed;
   background-color: var(--global-color-b8);
   margin: 0 auto;
@@ -20,15 +20,15 @@ header nav a {
   z-index: 2;
 }
 
-.active nav h1 {
+.fixed nav h1 {
   color: var(--global-color-white);
 }
 
-.active nav ul li a {
+.fixed nav ul li a {
   color: var(--global-color-white);
 }
 
-.active nav ul li a:hover {
+.fixed nav ul li a:hover {
   color: var(--global-color-c9);
 }
 
@@ -72,7 +72,7 @@ header nav a {
   margin-top: var(--global-space-24);
 }
 
-.active .mobile-menu li:first-of-type {
+.fixed .mobile-menu li:first-of-type {
   margin-top: var(--global-space-60);
 }
 

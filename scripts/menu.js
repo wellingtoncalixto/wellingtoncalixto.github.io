@@ -58,9 +58,9 @@ export default class Menu {
   }
 
   addActiveClassOnScroll() {
-    let scrollPos = window.pageYOffset;
+    let scrollPos = document.documentElement.scrollTop;
 
-    if (scrollPos > 1) {
+    if (scrollPos > 10) {
       this.header.classList.add("fixed");
     } else {
       this.header.classList.remove("fixed");
