@@ -190,13 +190,13 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-thumb {
   background: var(--global-color-b7);
-  border-left: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
+  border-left: 0.125rem solid var(--global-color-white);
+  border-right: 0.125rem solid var(--global-color-white);
   border-radius: 0.25rem;
 }
 
 html::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--global-color-white);
 }
 
 body {
@@ -264,6 +264,11 @@ li {
   width: 30px;
   height: 30px;
   background-size: cover;
+  transition: background-image 0.3s;
+}
+
+.icon:hover {
+  transition: background-image 0.3s;
 }
 
 .github-icon {
@@ -274,15 +279,16 @@ li {
   background-image: url("../assets/icones/linkedin-logo.svg");
 }
 
+.whatsapp-icon {
+  background-image: url("../assets/icones/whatsapp-logo.svg");
+}
+
 .github-icon:hover {
   background-image: url("../assets/icones/github-logo-hover.svg");
 }
+
 .linkedin-icon:hover {
   background-image: url("../assets/icones/linkedin-logo-hover.svg");
-}
-
-.whatsapp-icon {
-  background-image: url("../assets/icones/whatsapp-logo.svg");
 }
 
 .whatsapp-icon:hover {

@@ -61,9 +61,9 @@ export default class Menu {
     let scrollPos = window.pageYOffset;
 
     if (scrollPos > 1) {
-      this.header.classList.add("active");
+      this.header.classList.add("fixed");
     } else {
-      this.header.classList.remove("active");
+      this.header.classList.remove("fixed");
     }
   }
 

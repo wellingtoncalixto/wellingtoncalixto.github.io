@@ -21,11 +21,15 @@ header nav a {
 }
 
 .active nav h1 {
-  color: #fff;
+  color: var(--global-color-white);
 }
 
 .active nav ul li a {
-  color: #fff;
+  color: var(--global-color-white);
+}
+
+.active nav ul li a:hover {
+  color: var(--global-color-c9);
 }
 
 #hamburguer-menu {
@@ -79,6 +83,12 @@ header nav a {
 .menu-list li a {
   text-decoration: none;
   color: var(--global-color-white);
+  transition: color 0.3s;
+}
+
+.menu-list li a:hover {
+  color: var(--global-color-c9);
+  transition: color 0.3s;
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -94,10 +104,6 @@ header nav a {
     margin-top: 0px;
     gap: var(--global-space-20);
   }
-
-  .menu-list li a {
-    color: var(--global-color-black);
-  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -105,5 +111,14 @@ header nav a {
   .menu {
     max-width: 1300px;
     margin: 0 auto;
+  }
+
+  .menu-list li a {
+    color: var(--global-color-black);
+  }
+
+  .menu-list li a:hover {
+    color: var(--global-color-c2);
+    transition: color 0.3s;
   }
 }

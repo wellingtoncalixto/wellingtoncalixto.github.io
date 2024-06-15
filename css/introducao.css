@@ -41,29 +41,38 @@ h3 {
 }
 
 .projeto-button {
-  border: 2px solid var(--global-color-b9);
+  border: 2px solid;
+  border-color: var(--global-color-b9);
   border-radius: var(--global-space-12);
   padding: var(--global-space-12) var(--global-space-24);
   text-decoration: none;
   color: var(--global-color-b9);
   font-weight: 700;
+
+  transition-duration: 0.3s;
+  transition-property: border-color, color;
+}
+
+.projeto-button:hover {
+  border-color: var(--global-color-b8);
+  color: var(--global-color-b8);
+
+  transition-property: border-color, color;
 }
 
 .contato-button {
-  border: 2px solid var(--global-color-b8);
+  border: 2px solid transparent;
   background-color: var(--global-color-b8);
   border-radius: var(--global-space-12);
   padding: var(--global-space-12) var(--global-space-24);
   text-decoration: none;
   color: var(--global-color-white);
   font-weight: 700;
+  transition: background-color 0.3s;
 }
 
 .contato-button:hover {
-  background-image: linear-gradient(
-    var(--global-color-b8),
-    var(--global-color-b6)
-  );
+  background-color: var(--global-color-b7);
 }
 
 .social-midias {

@@ -37,20 +37,19 @@
   margin: 0 auto;
   height: max-content;
   align-self: flex-end;
-  border: 2px solid var(--global-color-b8);
+  border: 2px solid transparent;
   padding: var(--global-space-12) var(--global-space-24);
   font-weight: 700;
   color: var(--global-color-white);
   background-color: var(--global-color-b8);
   border-radius: 10px;
+  transition: background-color 0.3s;
 }
 
 .download-cv-button:hover {
-  background-image: linear-gradient(
-    var(--global-color-b8),
-    var(--global-color-b6)
-  );
-}
+  background-color: var(--global-color-b7);
+  transition: background-color 0.3s;
+ }
 
 @media screen and (min-width: 992px) and (min-height: 450px) {
   .about {

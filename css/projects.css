@@ -124,12 +124,16 @@
   height: 2rem;
 }
 
+.link-button,
+.github-button {
+  transition-duration: 0.3s;
+  transition-property: background-color;
+}
+
 .link-button:hover,
 .github-button:hover {
-  background-image: linear-gradient(
-    var(--global-color-b8),
-    var(--global-color-b6)
-  );
+  background-color: var(--global-color-b7);
+  transition-property: background-color;
 }
 
 [data-control="slide"] {
