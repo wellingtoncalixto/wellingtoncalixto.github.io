@@ -10,7 +10,6 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  max-width: 100%;
   overflow: hidden;
 }
 
@@ -46,9 +45,10 @@
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 20rem;
+  max-width: 30rem;
   background-color: var(--global-color-white);
   border-radius: 10px;
+  height: 50rem;
 }
 
 .card-content {
@@ -206,7 +206,6 @@
 
   .item {
     width: 100%;
-    height: 16rem;
   }
 
   .cards-list {
@@ -229,7 +228,7 @@
 
   .project-image-container img {
     height: 100%;
-    max-height: 16rem;
+
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
     object-fit: inherit;
@@ -253,6 +252,7 @@
 
   .project-info-container {
     padding: var(--global-space-12) var(--global-space-24);
+    gap: var(--global-space-12);
   }
 
   .card {
