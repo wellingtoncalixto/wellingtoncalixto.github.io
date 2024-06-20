@@ -16,10 +16,11 @@ export class SmoothScroll {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+    const y =
+      section.getBoundingClientRect().top +
+      document.documentElement.scrollTop -
+      80;
+    window.scrollTo({ top: y, behavior: "smooth" });
   }
 
   addEventListener() {

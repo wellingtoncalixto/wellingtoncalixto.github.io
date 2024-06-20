@@ -217,7 +217,7 @@ main {
   /* overflow-x: hidden; */
   grid-template-rows:
     max-content minmax(calc(100vh - 30px - 1.5rem - (2 * 1rem)), max-content)
-    repeat(3, minmax(100vh, max-content));
+    repeat(3, minmax(calc(100vh - 80px), max-content));
 }
 
 li {
